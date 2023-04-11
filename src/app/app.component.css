@@ -1,0 +1,282 @@
+
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  border-bottom: 1px solid #e5e5e5;
+  padding: 25px 0;
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+}
+
+.header .logo img {
+  vertical-align: bottom;
+}
+
+.header .nav {
+  margin-left: 244px;
+}
+
+.header .nav-items {
+  list-style: none;
+  display: flex;
+}
+
+.header .nav-item {
+  margin-right: 115px;
+}
+
+.header .nav-item a {
+  font-weight: 400;
+  font-size: 15px;
+  color: #030305;
+  text-decoration: none;
+}
+
+.header .nav-item a:hover {
+  border-bottom: 2px solid black;
+}
+
+
+.main {
+  background-image: url("../assets/images/background.png");
+  background-position: center;
+  background-size: cover;
+  padding: 104px 0 154px;
+}
+
+.main .main-info {
+  max-width: 855px;
+}
+
+.main .title {
+  font-weight: bold;
+  font-size: 80px;
+  line-height: 110%;
+  color: #030305;
+  margin-bottom: 40px;
+}
+
+.main .main-text {
+  font-size: 16px;
+  line-height: 130%;
+  color: #030305;
+  margin-bottom: 40px;
+  max-width: 502px;
+}
+
+.button {
+  padding: 20px;
+  width: 334px;
+  height: 64px;
+  background: #030305;
+  border: 0;
+  box-sizing: border-box;
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  transition: background-color .5s;
+}
+
+.button:hover:not(:disabled) {
+  cursor: pointer;
+  background: #575757;
+}
+
+.button:disabled {
+  cursor: not-allowed;
+  color: gray;
+  background-color: #343434;
+}
+
+.car {
+  padding: 100px 0;
+}
+
+.sub-title {
+  font-weight: bold;
+  font-size: 60px;
+  color: #030305;
+  margin-bottom: 40px;
+}
+
+.car .car-items {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.car .car-item {
+  max-width: 384px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.car .car-item-img img {
+  vertical-align: bottom;
+  transition: all .3s;
+}
+
+.car .car-item-img:hover img {
+  transform: scale(1.1);
+}
+
+.car .car-item-title {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  color: #030305;
+  padding: 15px 0 17px;
+}
+
+.car .car-item-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.car .car-item-point {
+  width: 110px;
+  height: 92px;
+  margin: 0 8px;
+}
+
+.car .car-item-point img {
+  margin-bottom: 11px;
+}
+
+.car .car-item-action {
+  margin-top: 13px;
+}
+
+.car .car-item-action button {
+  padding: 15px;
+  height: 54px;
+  width: 100%;
+}
+
+.car .car-item-point > div:nth-child(2) {
+  font-weight: bold;
+}
+
+.car .car-toggle {
+  display: flex;
+  width: 194px;
+  border: 1px solid gray;
+  margin: 20px 0;
+}
+
+.car .car-toggle div {
+  padding: 20px;
+  background: white;
+  box-sizing: border-box;
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: black;
+  transition: background-color .5s;
+  cursor: pointer;
+}
+
+.car .car-toggle div.active {
+  background: #030305;
+  color: #FFFFFF;
+}
+
+.car .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+
+.price {
+  overflow: hidden;
+}
+
+.price .container {
+  position: relative;
+  padding-bottom: 121px;
+}
+
+.price .sub-title {
+  margin-bottom: 20px;
+}
+
+.price .price-text {
+  font-size: 16px;
+  line-height: 130%;
+  color: #5D5D5F;
+  margin-bottom: 60px;
+}
+
+.price .price-form {
+  max-width: 344px;
+}
+
+.price .price-input {
+  box-sizing: border-box;
+  padding: 22px 18px;
+  width: 344px;
+  height: 65px;
+  background: #FFFFFF;
+  border: 1px solid #5D5D5F;
+  font-size: 16px;
+  color: #000000;
+  outline: none;
+  margin-bottom: 15px;
+}
+
+.price .price-input::placeholder {
+  color: #5D5D5F;
+}
+
+.price .button {
+  width: 100%
+}
+
+.price .price-background-img {
+  position: absolute;
+  bottom: 0;
+  left: 401px;
+  z-index: -1;
+}
+
+
+.footer {
+  border-top: 1px solid #e5e5e5;
+  padding: 25px 0;
+}
+
+.footer .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.rights {
+  font-weight: 400;
+  font-size: 15px;
+  color: #030305;
+}
+
+.price-input.ng-touched.ng-valid {
+  border:  1px solid #5d5d5f;
+}
+
+.price-input.ng-touched.ng-invalid {
+  border: 1px solid red;
+}
